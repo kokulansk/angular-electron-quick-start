@@ -11,7 +11,8 @@ function createWindow() {
         icon: `file://${__dirname}/dist/assets/logo.png`,
         webPreferences: {
             nativeWindowOpen: true,
-            nodeIntegration: true
+            nodeIntegration: true,
+            webSecurity: false
         }
     });
     win.loadURL(`file://${__dirname}/dist/index.html`);
